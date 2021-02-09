@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myCalc</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <form class="calculator" name="calc" onclick="document.calc.resulttxt.value = eval(calc.inputtxt.value)">
+        <input class="value" type="text" name="inputtxt" readonly="">
+        <input class="result" type="text" name="resulttxt" readonly="">
+        <span class="num clear" onclick="document.calc.inputtxt.value=''">AC</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='('">(</span>
+        <span class="num" onclick="document.calc.inputtxt.value +=')'">)</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='/'">/</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='7'">7</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='8'">8</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='9'">9</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='*'">*</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='4'">4</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='5'">5</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='6'">6</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='-'">-</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='1'">1</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='2'">2</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='3'">3</span>
+        <span class="num plus" onclick="document.calc.inputtxt.value +='+'">+</span>
+        <span class="num zero" onclick="document.calc.inputtxt.value +='0'">0</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='.'">.</span>
+        <span class="num" onclick="document.calc.inputtxt.value +='←'">←</span>
+    </form>
+    
+</body>
+</html>
